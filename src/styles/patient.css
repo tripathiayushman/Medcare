@@ -1,0 +1,263 @@
+/* Patient Details Styles */
+.patient-details {
+  padding: 2rem 9%;
+  min-height: calc(100vh - 200px);
+  background: #f5f5f5;
+  margin-top: 8rem;
+}
+
+.patient-details .heading {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
+  margin-bottom: 2rem;
+}
+
+.patient-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.basic-info,
+.contact-info,
+.emergency-contact,
+.medical-info {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+}
+
+.basic-info h2,
+.contact-info h2,
+.emergency-contact h2,
+.medical-info h2 {
+  color: var(--black);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.info-item label {
+  font-size: 1.8rem;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.info-item span {
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+
+.allergies,
+.current-medications,
+.medical-history {
+  margin-top: 2rem;
+}
+
+.allergies h3,
+.current-medications h3,
+.medical-history h3 {
+  color: var(--black);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.allergies ul,
+.current-medications ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.allergies li,
+.current-medications li {
+  background: var(--green);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.history-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 0.1rem solid #eee;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.history-header h4 {
+  color: var(--black);
+  font-size: 1.8rem;
+}
+
+.history-header .date {
+  color: var(--light-color);
+  font-size: 1.4rem;
+}
+
+.history-content {
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+
+.history-content p {
+  margin: 0.5rem 0;
+}
+
+.history-content strong {
+  color: var(--black);
+}
+
+/* Consultation Page Styles */
+.consultation {
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+.consultation-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sms-btn {
+  background: #28a745;
+  color: white;
+}
+
+.call-btn {
+  background: #007bff;
+  color: white;
+}
+
+.reschedule-btn {
+  background: #ffc107;
+  color: #000;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .patient-details {
+    padding: 2rem;
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .patient-details {
+    margin-top: 6rem;
+  }
+
+  .patient-details .heading {
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .basic-info h2,
+  .contact-info h2,
+  .emergency-contact h2,
+  .medical-info h2 {
+    font-size: 2rem;
+  }
+
+  .info-item label {
+    font-size: 1.6rem;
+  }
+
+  .info-item span {
+    font-size: 1.4rem;
+  }
+
+  .allergies h3,
+  .current-medications h3,
+  .medical-history h3 {
+    font-size: 1.8rem;
+  }
+
+  .allergies li,
+  .current-medications li {
+    font-size: 1.4rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .history-header h4 {
+    font-size: 1.6rem;
+  }
+
+  .history-content {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .patient-details {
+    margin-top: 5rem;
+  }
+
+  .patient-details .heading {
+    font-size: 2.2rem;
+  }
+
+  .basic-info,
+  .contact-info,
+  .emergency-contact,
+  .medical-info {
+    padding: 1.5rem;
+  }
+} 

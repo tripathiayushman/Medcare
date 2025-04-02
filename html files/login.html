@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Health Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing stylesheet -->
+    <style>
+        /* Additional styles specific to the login page */
+        .login-container {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin: 10rem auto; /* Center the login container */
+        }
+
+        .login-container h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: var(--black);
+            text-shadow: var(--text-shadow);
+        }
+
+        .login-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .login-options button {
+            padding: 1.5rem;
+            border: var(--border);
+            border-radius: 0.5rem;
+            background: #fff;
+            color: var(--green);
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--box-shadow);
+        }
+
+        .login-options button:hover {
+            background: var(--green);
+            color: #fff;
+        }
+
+        .login-options button i {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare. </a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="services.html">services</a>
+            <a href="about.html">about</a>
+            <a href="doctors.html">doctors</a>
+            <a href="book.html">book</a>
+            <a href="reviews.html">review</a>
+            <a href="blogs.html">blog</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login">
+        <div class="login-container">
+            <h1>Login to MedCare</h1>
+            <div class="login-options">
+                <!-- Patient Login -->
+                <button onclick="window.location.href='patient_login.html'">
+                    <i class="fas fa-user"></i> Patient Login
+                </button>
+
+                <!-- Doctor Login -->
+                <button onclick="window.location.href='doctor_login.html'">
+                    <i class="fas fa-user-md"></i> Doctor Login
+                </button>
+
+                <!-- Admin Login -->
+                <button onclick="window.location.href='admin_login.html'">
+                    <i class="fas fa-user-shield"></i> Admin Login
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="services.html"> <i class="fas fa-chevron-right"></i> services </a>
+                <a href="about.html"> <i class="fas fa-chevron-right"></i> about </a>
+                <a href="doctors.html"> <i class="fas fa-chevron-right"></i> doctors </a>
+                <a href="book.html"> <i class="fas fa-chevron-right"></i> book </a>
+                <a href="reviews.html"> <i class="fas fa-chevron-right"></i> review </a>
+                <a href="blogs.html"> <i class="fas fa-chevron-right"></i> blog </a>
+            </div>
+            <div class="box">
+                <h3>our services</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> dental </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> cardiology </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+                <a href="#"> <i class="fas fa-chevron-right"></i> massage therapy </a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +91 9090808060 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> hospital@mail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai, India </a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back-to-Top Button -->
+    <div id="back-to-top" class="fas fa-arrow-up"></div>
+
+    <!-- JavaScript for Back-to-Top Button -->
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
