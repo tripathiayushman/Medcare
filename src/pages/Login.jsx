@@ -19,7 +19,9 @@ const Login = () => {
       ...prev,
       [name]: value
     }));
-    // Clear error when user starts typing
+
+
+    // Clears errors when user is typing
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -34,12 +36,13 @@ const Login = () => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Store user data in localStorage
+
+      // Store  inf o in localStorage
       localStorage.setItem('userEmail', formData.email);
       localStorage.setItem('userType', formData.userType);
       
-      // Simulate successful login
-      // In a real app, you would verify credentials with your backend
+      // successful login (no backeend so no verification)
+
       switch (formData.userType) {
         case 'patient':
           navigate('/patient-dashboard');

@@ -5,7 +5,6 @@ const Book = () => {
   return (
     <>
       <Header />
-      
       <section className="book" id="book">
         <h1 className="heading"> <span>book</span> now </h1>
         <div className="row">
@@ -22,7 +21,6 @@ const Book = () => {
           </form>
         </div>
       </section>
-
       <Footer />
     </>
   );

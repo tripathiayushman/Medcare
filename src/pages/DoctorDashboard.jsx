@@ -19,7 +19,6 @@ const DoctorDashboard = () => {
     }
   }, [navigate]);
 
-  // Sample appointments data
   const appointments = [
     {
       id: 1,

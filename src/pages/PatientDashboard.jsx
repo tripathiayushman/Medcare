@@ -96,7 +96,7 @@ const PatientDashboard = () => {
       ...prev,
       [name]: value
     }));
-    // Clear error when user starts typing
+    // Clear error when typing
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,
@@ -113,7 +113,6 @@ const PatientDashboard = () => {
     if (Object.keys(validationErrors).length === 0) {
       // Handle form submission
       console.log('Form submitted:', formData);
-      // Here you would typically send the data to your backend
     }
   };
 
@@ -128,11 +127,10 @@ const PatientDashboard = () => {
   const handleCancel = (appointmentId) => {
     if (window.confirm('Are you sure you want to cancel this appointment?')) {
       // Handle cancel logic here
-      console.log('Cancelling appointment:', appointmentId);
+      // console.log('Cancelling appointment:', appointmentId);
     }
   };
 
-  // Sample data for appointments and medical history
   const appointments = [
     {
       id: 1,

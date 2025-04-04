@@ -32,7 +32,6 @@ const ForgotPassword = () => {
 
             <button type="submit" className="btn">Send Reset Link</button>
           </form>
-
           <div className="login-links">
             <p>Remember your password? <Link to="/login">Login here</Link></p>
           </div>
@@ -42,5 +41,4 @@ const ForgotPassword = () => {
     </>
   );
 };
-
 export default ForgotPassword; 

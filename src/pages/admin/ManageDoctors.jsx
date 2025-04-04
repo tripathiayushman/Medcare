@@ -15,7 +15,6 @@ const ManageDoctors = () => {
       department: 'Cardiology',
       experience: '5 years'
     },
-    // Add more mock data as needed
   ]);
 
   const handleEdit = (id) => {

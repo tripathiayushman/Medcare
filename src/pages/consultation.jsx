@@ -28,11 +28,11 @@ const Consultation = () => {
             <div className="info-grid">
               <div className="info-item">
                 <label>Name:</label>
-                <span>John Doe</span>
+                <span>Ayushman Triapthi</span>
               </div>
               <div className="info-item">
                 <label>Age:</label>
-                <span>45</span>
+                <span>18</span>
               </div>
               <div className="info-item">
                 <label>Gender:</label>
@@ -44,7 +44,7 @@ const Consultation = () => {
               </div>
               <div className="info-item">
                 <label>Date:</label>
-                <span>March 25, 2024</span>
+                <span>April 25, 2025</span>
               </div>
               <div className="info-item">
                 <label>Reason for Visit:</label>
@@ -61,14 +61,14 @@ const Consultation = () => {
                 <h3>Previous Conditions</h3>
                 <ul>
                   <li>Hypertension (2020)</li>
-                  <li>Type 2 Diabetes (2019)</li>
+                  <li>Acute pancreatitis (2019)</li>
                 </ul>
               </div>
               <div className="history-item">
                 <h3>Current Medications</h3>
                 <ul>
                   <li>Blood Pressure Medication</li>
-                  <li>Diabetes Medication</li>
+                  <li>Pancreatitis Medication</li>
                 </ul>
               </div>
             </div>

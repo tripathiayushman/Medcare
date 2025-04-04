@@ -8,10 +8,10 @@ const ManagePatients = () => {
   const [patients] = useState([
     {
       id: 1,
-      name: 'John Doe',
-      email: 'john@example.com',
-      phone: '1234567890',
-      age: 35,
+      name: 'Ayushman Tripathi',
+      email: 'ayushman@gmail.com',
+      phone: '9999999900',
+      age: 12,
       gender: 'Male',
       status: 'Active'
     },
